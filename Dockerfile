@@ -5,7 +5,7 @@ MAINTAINER Khanh Tran <khanh.tq@geekup.vn>
 # Install modules
 RUN apt-get update
 RUN apt-get install -y software-properties-common
-RUN apt-add-repository ppa:phalcon/stable
+RUN apt-add-repository ppa:phalcon/legacy
 RUN apt-get update; apt-get install -y php5-dev git libpq-dev libmemcached-dev libicu-dev wget && apt-get clean
 RUN apt-get install -y   php5-mysql php5-intl php5-phalcon php5-gd
 RUN pecl install -f xdebug
